@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/core"/>
+	<classpathentry kind="src" path="src/main/file"/>
+	<classpathentry kind="src" path="src/main/exec"/>
+	<classpathentry kind="src" path="src/main/rpc"/>
+	<classpathentry kind="src" path="src/main/net"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/log4j.jar"/>
+	<classpathentry kind="lib" path="lib/protobuf-java-2.5.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
