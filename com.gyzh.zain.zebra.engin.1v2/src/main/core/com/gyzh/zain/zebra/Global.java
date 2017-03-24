@@ -16,7 +16,7 @@ public class Global {
     /**
      * 监听的端口号
      */
-    private static final int port = 9999;
+    private static final int port = 8899;
     /**
      * 存放接收到的数据
      */

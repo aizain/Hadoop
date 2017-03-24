@@ -1,6 +1,7 @@
 package com.gyzh.zain.zebra.net;
 
 import java.io.IOException;
+import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.SelectionKey;
@@ -42,8 +43,10 @@ public class NIOServer implements Runnable {
         try {
             ServerSocketChannel ssc = ServerSocketChannel.open();
             ssc.configureBlocking(false);
-            ssc.socket().bind(new InetSocketAddress("127.0.0.1", Global.getPort()));
+            ssc.socket().bind(new InetSocketAddress("10.19.177.182", Global.getPort()));
             ssc.register(selc, SelectionKey.OP_ACCEPT);
+            logger.info("监听开启： " + ssc.toString());
+            
             
             while (true) {
                 selc.select(1 * 1000);

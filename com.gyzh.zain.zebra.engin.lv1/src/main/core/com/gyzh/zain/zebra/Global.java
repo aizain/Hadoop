@@ -20,7 +20,10 @@ public class Global {
     /**
      * 扫描文件的基路径
      */
-    private static final String baseDir = "E:\\data";
+     // private static final String baseDir = "E:\\data"; // windows
+     private static final String baseDir = "/usr/zain/zebra/engin1/data"; // linux
+    
+    
     /**
      * 存储扫描到的文件的阻塞式队列
      */
@@ -48,8 +51,11 @@ public class Global {
     private static final Map<String, Engin2Info> e2Map = new HashMap<>();
     
     static {
-        e2Map.put("1", new Engin2Info("127.0.0.1", 9999));
-        // e2Map.put("1", new Engin2Info("127.0.0.1", 9999));
+        // e2Map.put("1", new Engin2Info("127.0.0.1", 9999)); // windows
+        // e2Map.put("2", new Engin2Info("127.0.0.1", 9999)); // windows
+        
+        e2Map.put("1", new Engin2Info("10.19.177.182", 8899)); // linux
+        // e2Map.put("2", new Engin2Info("127.0.0.1", 9999)); // linux
     }
     
     public static Map<String, Engin2Info> getE2map() {
