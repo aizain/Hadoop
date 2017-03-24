@@ -2,8 +2,8 @@
 <c3p0-config>    
     <default-config> 
 	    <property name="driverClass">com.mysql.jdbc.Driver</property> 
-	    <property name="jdbcUrl">jdbc:mysql://101.201.239.112:3306/zebra</property> 
+	    <property name="jdbcUrl">jdbc:mysql:///zebra</property> 
 	    <property name="user">root</property> 
-    	<property name="password">12345678</property>    
+    	<property name="password">123456</property>    
     </default-config>   
 </c3p0-config> 
