@@ -43,6 +43,11 @@ public class WordCountDriver {
         // 设置Reducer组件输出的value的类型
         job.setOutputValueClass(Text.class);
         
+        // 设置reduce任务数量，根据key值的hashcode进行分区
+        // job.setNumReduceTasks(1);
+        // 设置自定义分区类，如果设置了，则Hadoop就不用默认的分区方式了
+        // job.setPartitionerClass(WordPartitioner.class);
+        
         // 设置job处理文件所在的HDFS路径
         // 输入路径可以指到目录级别，它会把目录的所有文件都进行处理，不递归处理其他子目录的文件
         FileInputFormat.setInputPaths(job, new Path("/wordcount/words.txt"));

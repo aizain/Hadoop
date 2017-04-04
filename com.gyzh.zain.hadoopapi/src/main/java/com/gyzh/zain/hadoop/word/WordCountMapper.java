@@ -30,6 +30,13 @@ import org.apache.hadoop.mapreduce.Mapper;
  * Text
  * NullWritable
  * 
+ * 1.Mapper任务数量：
+ * Mapper任务取决切片的数量，Splits，切片里封装了处理的数据长度以及处理数据位置所在信息
+ * 2.切片的数量取决于：
+ * 文件总大小/BlockSize
+ * BlockSize = 128MB
+ * INFO mapreduce.JobSubmitter: number of splits:1
+ * 
  * @author zain
  * 17/04/04
  */

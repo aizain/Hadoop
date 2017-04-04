@@ -22,6 +22,14 @@ import org.apache.hadoop.mapreduce.Reducer;
  * 所以，reduce方法执行的次数取决于Mapper输出的key（不同的key）
  * 2.Reducer会对key进行排序
  * 
+ * Reducer任务数量：
+ * Hadoop默认就是一个
+ * 此外，结果文件的数量=Reducer任务数量
+ * 
+ * 分区的概念：
+ * Hadoop默认分区用的是HashPartitioner，
+ * 根据Mapper输出的key的hashcode进行分区
+ * 
  * @author zain
  * 17/04/04
  */
