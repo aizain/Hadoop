@@ -24,6 +24,11 @@ import org.apache.hadoop.mapreduce.Mapper;
  * 2.每有一行数据，就会触发一次map方法
  * 3.第三个和第四个形参，要和context输出的key和value类型对应
  * 
+ * 常用类型：
+ * LongWritable
+ * IntWritable
+ * Text
+ * NullWritable
  * 
  * @author zain
  * 17/04/04
