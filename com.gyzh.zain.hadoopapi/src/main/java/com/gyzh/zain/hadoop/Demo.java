@@ -27,17 +27,17 @@ public class Demo {
     private static final Logger logger = LoggerFactory.getLogger(Demo.class);
     private static Configuration conf = new Configuration();
     
-    public static void main(String[] args) throws Exception {
-        FileSystem fs = TestConnection();
-        // TestMkdir(fs);
-        // TestCopyToLocal(fs);
-        // TestCopyFromLocal(fs);
-        // TestDel(fs);
-        // TestStatus(fs);
-        TestBlockLocation(fs);
-        fs.close();
-        
-    }
+//    public static void main(String[] args) throws Exception {
+//        FileSystem fs = TestConnection();
+//        // TestMkdir(fs);
+//        // TestCopyToLocal(fs);
+//        // TestCopyFromLocal(fs);
+//        // TestDel(fs);
+//        // TestStatus(fs);
+//        TestBlockLocation(fs);
+//        fs.close();
+//        
+//    }
     
     
     /**
