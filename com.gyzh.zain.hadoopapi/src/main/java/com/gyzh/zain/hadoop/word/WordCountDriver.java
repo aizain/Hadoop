@@ -50,9 +50,9 @@ public class WordCountDriver {
         
         // 设置job处理文件所在的HDFS路径
         // 输入路径可以指到目录级别，它会把目录的所有文件都进行处理，不递归处理其他子目录的文件
-        FileInputFormat.setInputPaths(job, new Path("/wordcount/words.txt"));
+        FileInputFormat.setInputPaths(job, new Path("hdfs://106.75.108.147:9000/words.txt"));
         // MR处理生成的结果是以文件形式来存储的，这个结果文件也必须放在HDFS上，这个输出路径也需要指定
-        FileOutputFormat.setOutputPath(job, new Path("/wordcount/result"));
+        FileOutputFormat.setOutputPath(job, new Path("hdfs://106.75.108.147:9000/result"));
         
         // 提交任务
         job.waitForCompletion(true);
