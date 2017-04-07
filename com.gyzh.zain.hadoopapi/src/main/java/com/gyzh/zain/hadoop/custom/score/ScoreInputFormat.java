@@ -8,12 +8,13 @@ import org.apache.hadoop.mapreduce.RecordReader;
 import org.apache.hadoop.mapreduce.TaskAttemptContext;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 
-public class ScoreInputFormat extends FileInputFormat<Text, Text> {
+public class ScoreInputFormat extends FileInputFormat<Text,Text>{
 
-    @Override
-    public RecordReader<Text, Text> createRecordReader(InputSplit split, TaskAttemptContext context)
-            throws IOException, InterruptedException {
-        return new ScoreRecordReader();
-    }
-    
+	@Override
+	public RecordReader<Text, Text> createRecordReader(InputSplit split, TaskAttemptContext context)
+			throws IOException, InterruptedException {
+		// TODO Auto-generated method stub
+		return new ScoreRecordReader();
+	}
+
 }
