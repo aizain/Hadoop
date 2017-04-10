@@ -118,5 +118,6 @@
 	<classpathentry kind="lib" path="lib/xmlenc-0.52.jar"/>
 	<classpathentry kind="lib" path="lib/xz-1.0.jar"/>
 	<classpathentry kind="lib" path="lib/zookeeper-3.4.6.jar"/>
+	<classpathentry kind="lib" path="lib/phoenix-4.9.0-HBase-1.2-client.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
