@@ -1,0 +1,6 @@
+/bin/
+/hbase-lib/
+/kafka-lib/
+/other-lib/
+/storm-kafka/
+/storm-lib/
